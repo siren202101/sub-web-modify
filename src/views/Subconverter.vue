@@ -902,7 +902,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://modevil.dpdns.org" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://sub.modevil.dpdns.org" : this.getUrlParam(),
         shortType: "https://modevil.dpdns.org/short",
         remoteConfig: "https://raw.githubusercontent.com/siren202101/clash/refs/heads/main/private.ini",
         excludeRemarks: "",
