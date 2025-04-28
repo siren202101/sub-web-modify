@@ -904,7 +904,7 @@ export default {
         clientType: "",
         customBackend: this.getUrlParam() == "" ? "https://modevil.dpdns.org" : this.getUrlParam(),
         shortType: "https://modevil.dpdns.org/short",
-        remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
+        remoteConfig: "https://raw.githubusercontent.com/siren202101/clash/refs/heads/main/private.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
