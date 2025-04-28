@@ -1,0 +1,18 @@
+app = "sub-web-modify"  # 替换为你的应用名
+#primary_region = "sjc"  # 选择一个合适的 Fly.io 数据中心位置
+
+[build]
+  dockerfile = "Dockerfile"  # 确保路径正确，指向你的 Dockerfile 文件
+
+[env]
+  PORT = "80"
+
+[[services]]
+  internal_port = 80
+  protocol = "tcp"
+  [services.ports]
+    port = 80
+    handlers = ["http"]
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
