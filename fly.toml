@@ -1,0 +1,16 @@
+app = "sub-web-modify"  # 替换成你创建的应用名称
+
+[build]
+  image = "keyonjeanli78/sub-web-modify:latest"  # 使用 Docker 镜像部署
+
+[[services]]
+  internal_port = 80  # 镜像内部的端口
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
